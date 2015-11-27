@@ -6,11 +6,26 @@
 #include <iostream>
 using namespace std;
 
+
+double square( double x )
+{
+	return x*x;
+}
+
+// Prints the sqare in screen
+void print_square( double x )
+{
+	cout << "the square of " << x << " is " << square( x ) << "\n";
+}
+
+// Main method
 int main() {
-	cout << "Hello World!" << endl;
-	int x;
+	cout << "Insert a number to compute the square value: " << endl;
+	double x;
+	cin >> x;
+	print_square( x );
+
 	cin >> x;
 	return 0;
 }
-
 
